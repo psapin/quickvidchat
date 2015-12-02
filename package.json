@@ -1,0 +1,30 @@
+{
+  "name": "quickvidchat",
+  "version": "0.0.1",
+  "description": "Node.js video conferencing using WebRTC",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psapin/quickvidchat.git"
+  },
+  "author": "psapin",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/psapin/quickvidchat/issues"
+  },
+  "homepage": "https://github.com/psapin/quickvidchat#readme",
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "easyrtc": "^1.0.15",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1", 
+    "serve-favicon": "~2.3.0",
+    "socket.io": "^1.3.7"
+  }
+}

@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title=title
+    link(rel='stylesheet', href='/stylesheets/easyrtc.css')
+    meta(name='viewport', content='width=device-width, minimum-scale=1, maximum-scale=1')
+    script(src='/javascripts/easyrtc.js')
+    script(src='/javascripts/socket.io.js')
+    link(rel='stylesheet', href='/stylesheets/demo_room.css')
+    script(src='/javascripts/demo_multiparty.js')
+  body(onload='appInit()')
+    div.boxCommon#fullpage(style='background-image:url(/images/irongrip.png)')
+        video.transit.boxCommon.thumbCommon.easyRTCMirror#box0(muted='muted', volume='0')
+        video.transit.boxCommon.thumbCommon#box1(style='visibility:hidden')
+        video.transit.boxCommon.thumbCommon#box2(style='visibility:hidden')
+        video.transit.boxCommon.thumbCommon#box3(style='visibility:hidden')
+        div#textentryBox(onsubmit='sendText()', style='diplay:none')
+            input.transit.boxCommon#textentryField(type='text')
+            br
+            button#textentrySubmit(style='float:right;margin-right:1em', onclick='sendText()') Send
+            button#textentryCancel(style='float:right;margin-right:1em', onclick='cancelText()') Cancel
+        img.transit.boxCommon#killButton(onclick='killActiveBox()', src='images/button_close.png', style='display:none;z-index:3', alt='close button')
+        img.transit.boxCommon#muteButton(onclick='muteActiveBox()', src='images/button_mute.png', style='display:none;z-index:3', alt='mute button')
+        img.transit.boxCommon#textEntryButton(onclick='showTextEntry()', src='images/textEntry.png', style='display:none;z-index:3', alt='text button')
+        
